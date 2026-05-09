@@ -1,0 +1,8 @@
+streamlit
+kafka-python
+fastapi
+uvicorn
+transformers
+torch
+pandas
+numpy
