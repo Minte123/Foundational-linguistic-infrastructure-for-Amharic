@@ -9,5 +9,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 EXPOSE 8501
-
-CMD ["streamlit", "run", "phase1_annotation_ui/app.py"]
+EXPOSE 8000

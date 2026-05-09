@@ -6,6 +6,8 @@ producer = KafkaProducer(
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
-def publish_annotation(annotation):
-    producer.send("human_annotations", annotation)
-    print("Annotation sent to Kafka.")
+def publish(topic, payload):
+
+    producer.send(topic, payload)
+
+    producer.flush()

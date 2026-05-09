@@ -1,19 +1,15 @@
-# Foundational Linguistic Infrastructure for Amharic AI
+# Full-Scale Amharic Linguistic AI Platform
 
-This repository is a foundational architecture for building a scalable
-Amharic NLP ecosystem.
-
-Included:
+Advanced infrastructure for:
 - Human-in-the-loop annotation
-- Kafka streaming
-- AI tagging agents
-- Crowdsourcing framework
-- Morphological intelligence layer
-- Docker infrastructure
+- Distributed Kafka streaming
+- Multi-agent AI tagging
+- Morphological decomposition
+- Transformer inference
+- Autonomous retraining
+- Crowdsourced annotation
+- Consensus validation
+- Character-aware NLP
 
-Phases:
-1. Annotation Infrastructure
-2. Streaming Infrastructure
-3. Multi-Agent Learning
-4. Crowdsourced Annotation
-5. Morphological Intelligence
+This repository is a production-oriented architecture scaffold for building
+a scalable Amharic AI ecosystem.

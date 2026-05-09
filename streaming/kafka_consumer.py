@@ -8,5 +8,5 @@ consumer = KafkaConsumer(
 )
 
 for message in consumer:
-    print("Received Annotation:")
+
     print(message.value)

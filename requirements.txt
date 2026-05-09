@@ -1,8 +1,15 @@
 streamlit
-kafka-python
 fastapi
 uvicorn
+kafka-python
 transformers
 torch
+datasets
+tokenizers
 pandas
 numpy
+sqlalchemy
+psycopg2-binary
+sentencepiece
+accelerate
+scikit-learn

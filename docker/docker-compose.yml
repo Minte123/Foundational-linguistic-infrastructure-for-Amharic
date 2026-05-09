@@ -1,12 +1,21 @@
 version: '3.9'
 
 services:
+
   annotation-ui:
     build:
       context: ..
       dockerfile: docker/Dockerfile
     ports:
       - "8501:8501"
+
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
 
   kafka:
     image: bitnami/kafka:latest
@@ -17,3 +26,12 @@ services:
     image: bitnami/zookeeper:latest
     ports:
       - "2181:2181"
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: amharic
+      POSTGRES_PASSWORD: amharic
+      POSTGRES_DB: linguistic_ai
+    ports:
+      - "5432:5432"
